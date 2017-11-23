@@ -10,7 +10,7 @@
     <servlet>
         <display-name>FrontController</display-name>
         <servlet-name>FrontController</servlet-name>
-        <servlet-class>controller.FrontController</servlet-class>
+        <servlet-class>by.tc.parsing.controller.FrontController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>FrontController</servlet-name>
