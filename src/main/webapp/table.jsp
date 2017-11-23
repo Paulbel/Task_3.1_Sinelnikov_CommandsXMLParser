@@ -5,6 +5,47 @@
 </head>
 <body>
 
+
+<c:set var="context" value="${sessionScope.viewContext}"/>
+
+<c:if test="${context.less}">
+<form action="FrontController" method="get">
+    <input type="hidden" name="command" value="prevPage"/>
+    <input type="submit" value="<-"/>
+</form>
+</c:if>
+
+<c:out value="${context.startEntryIndex} - ${context.endEntryIndex}"/>
+
+<c:if test="${context.more}">
+<form action="FrontController" method="get">
+    <input type="hidden" name="command" value="nextPage"/>
+    <input type="submit" value="->"/>
+</form>
+</c:if>
+
+<form action="FrontController" method="get">
+    <input type="hidden" name="command" value="changeEntryNumber"/>
+    <input type="text" name="onPage" value="${context.onPage}" style="width: 20px"/>
+</form>
+
+
+
+
+
+<table border="1">
+    <c:forEach var="entry" items="${context.map}">
+        <tr>
+            <td><c:out value="${entry.key}"/></td>
+            <td><c:out value="${entry.value}"/></td>
+        </tr>
+    </c:forEach>
+</table>
+
+
+
+
+<%--
 <c:set var="perPage" scope="session" value="${param.perPage}"/>
 <c:set var="start" scope="session" value="${param.start}"/>
 <c:set var="count" value="${requestScope.count}"/>
@@ -40,6 +81,5 @@
         <input type="hidden" name="start" value="${start}">
         <input type="hidden" name="command" value="changeEntries">
         <input type="text" name="perPage" value="${perPage}" style="width: 20px"/>
-
     </form>
-</c:if>
+</c:if>--%>
