@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cm:commands xmlns:cm="http//www.Optics.tc.com/command"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http//www.Optics.tc.com/command schema.xsd">
+    <command>
+        <name>banUser</name>
+        <className>BanUserCommand</className>
+    </command>
+    <command>
+        <name>registration</name>
+        <className>RegistrationCommand</className>
+    </command>
+    <command>
+        <name>signIn</name>
+        <className>SignInCommand</className>
+    </command>
+    <command>
+        <name>signOut</name>
+        <className>SignOutCommand</className>
+    </command>
+    <command>
+        <name>showVisits</name>
+        <className>ShowVisitsCommand</className>
+    </command>
+    <command>
+        <name>showPurchases</name>
+        <className>ShowPurchasesCommand</className>
+    </command>
+    <command>
+        <name>showCart</name>
+        <className>ShowCartCommand</className>
+    </command>
+    <command>
+        <name>lensSelection</name>
+        <className>LensSelectionCommand</className>
+    </command>
+    <command>
+        <name>buyGoods</name>
+        <className>BuyGoodsCommand</className>
+    </command>
+    <command>
+        <name>createNewVisit</name>
+        <className>CreateNewVisitCommand</className>
+    </command>
+
+
+</cm:commands>
